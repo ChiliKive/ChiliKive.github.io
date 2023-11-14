@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <link rel="stylesheet" href="t_style.css" />
+    <title>IP-23 Table site</title>
+</head>
+
+<body>
+    <table class="design-table" style="border-collapse: collapse">
+        <tbody>
+            <tr>
+                <th class="column-content" rowspan="2">
+                    <h1> Навігація по сайту </h1>
+                    <hr>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                            <a href="t_grouplist.html">Список групи</a>
+                        </li>
+                        <li>
+                            <a href="t_semesters.html">Семестри</a>
+                        </li>
+                        <li>
+                            <a href="t_classeslinks.html">Лінки на пари</a>
+                        </li>
+                        <li>
+                            <a href="t_cas.html">Скарги та пропозиції</a>
+                        </li>
+                        <li>
+                            <a href="grid_index.html">Grid-версія</a>
+                        </li>
+                        <li>
+                            <a href="flex_index.html">Flex-версія</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div id="firstBlockTextDiv">
+                        <span id="firstBlockText">Цей текст написано в першому блоці сайту, та він існує щоб перевірити
+                            js код та поміняти його місяцями з текстом з 2 блоку</span>
+                    </div>
+                    <div id="block1">
+                        <br>
+                        <a href="#" onclick="createList(1)">Створити список</a>
+                    </div>
+                </th>
+                <th class="spacer" rowspan="3"></th>
+                <th class="upper-rectangle">
+                    <h1 class="x1-header">Наша ІП-23 | (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h1>
+                    <div id="secondBlockTextDiv">
+                        <span id="secondBlockText">Цей текст написано в другому блоці сайту, та він існує щоб перевірити
+                            js код та поміняти його місяцями з текстом з 1 блоку</span>
+                    </div>
+                    <div id="block2">
+                        <br>
+                        <a href="#" onclick="createList(2)">Створити список</a>
+                    </div>
+                </th>
+            </tr>
+            <tr class="big-row">
+                <td class="content">
+                    <p> В глибині інтернету, де код ідеться,
+                        І наука вивчається в сітці біти і байти,
+                        На ФІОТ, у КПІ,
+                        Група ІП-23 знань шукає світло.
+                    </p>
+                    <p>
+                        Всі, як струни, вибирають шлях до знань,
+                        На горизонті майбутнього у них план.
+                        Програмісти, як митець інтернет-коду,
+                        По стежках алгоритмів йдуть мужньо.
+                    </p>
+                    Всі, як струни, вибирають шлях до знань,
+                    На горизонті майбутнього у них план.
+                    Програмісти, як митець інтернет-коду,
+                    По стежках алгоритмів йдуть мужньо.
+                    <p>
+                        Інтерфейси, бази даних, алгоритми складні,
+                        На форумах і форках вони шукають відповіді.
+                        Кожен рядок коду - як поезія для них,
+                        У світі програмування вони - справжні красники.
+                    </p>
+                    <p>
+                        І у ІП-23 дружба завжди міцна,
+                        Разом вивчають всі тонкощі програмування.
+                        На битви з помилками вони завжди готові,
+                        Спільно долають вони всі труднощі шляху.
+                    </p>
+                    <p>
+                        Нехай шифри і коди для них - як загадки,
+                        Вони майстри розкривати всі інтернет-доріжки.
+                        На факультеті ФІОТ, на КПІ відомі ІП-23,
+                        Програмісти вишукані, майстри в інтернет-морі.
+                    </p>
+                    <p>
+                        І так, нехай їх вірш не буде дуже складним,
+                        Бо Шевченко несе душу мовної відданості.
+                        Група ІП-23 на шляху до знань вищих,
+                        Нехай їм щастить, хай буде завжди в них світло.
+                    </p>
+                    <div>
+                        <h3>Обрахунок площі еліпсу</h3>
+                        <p>
+                            Площа еліпса з малою діагоналлю : <span id="ellipseMinrad">?</span> та великою діагоналлю :
+                            <span id="ellipseMaxrad">?</span> = <span id="ellipseSquareAnswer">?</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Пошук дільників числа</h3>
+                        <form id="devideform">
+                            <label for="numForSearch">Число для пошуку дільників:</label>
+                            <input type="number" id="numForSearch" required>
+                            <br>
+                            <button type="button" id="FindDivisorsButton">Знайти дільники</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3 class="label5thtask">Зміна положення тексту</h3>
+                        <br>
+                        <span>Розміщення тексту праворуч</span>
+                        <br>
+                        <label>
+                            <input type="checkbox" id="checkboxBlock1"> 1 блок
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" id="checkboxBlock2"> 2 блок
+                        </label>
+                    </div>
+                    <div id="block3">
+                        <br>
+                        <a href="#" onclick="createList(3)">Створити список</a>
+                    </div>
+                    <div>
+                        <h3 class="label5thtask">Збереження списків у блоках</h3>
+                        <button onclick="saveList()">Зберегти в localStorage</button>
+                        <button onclick="clearList()">Видалити з localStorage</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="bottom-square">
+                    <p>Secured by:</p>
+                    <img src="budanov.jpg" alt="Кирило Буданов" width="300" height="300">
+                    <div id="block4">
+                        <br>
+                        <a href="#" onclick="createList(4)">Створити список</a>
+                    </div>
+                </td>
+                <td class="bottom-rectangle">
+                    <p class="x2-footer"><strong>*Смерть
+                            кацапам*<br><br>ІП-23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    </p>
+                    <div id="block5">
+                        <br>
+                        <a href="#" onclick="createList(5)">Створити список</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="sitescropt.js"></script>
+</body>
+
+</html>

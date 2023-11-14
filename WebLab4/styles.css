@@ -1,0 +1,308 @@
+body{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;    
+}
+
+.header{
+    min-height: 60px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.nav-button {
+    display: none;
+    justify-self: right;
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    padding-right: 30px;
+}
+
+.dropdown {
+    padding-right: 40px;
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    border: none;
+    z-index: 1;
+}
+
+.link:hover {
+    background-color: #e5e5e5;
+}
+
+.link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border: solid 1px lightgray;
+    background-color: white;
+}
+
+.dropdown-item {
+    display: block;
+}
+
+
+.logo{
+    justify-self: left;
+    padding: 0px 60px;
+}
+
+.logo-png{
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+.menu-link{
+    padding: 0px 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: #6a707e;
+}
+
+.main{
+    padding: 30px;
+    display: grid;
+    min-height: 75.7vh;
+    width: 100%;
+    flex-grow: 1;
+    column-gap: 20px;
+    row-gap: 20px;
+    box-sizing: border-box;
+    grid-template-columns: 43% 40%;
+    /* grid-template-areas:
+        'image3 image1 main-info'
+        'image2 info'
+    ; */
+
+    background-color: #e0e5eb;
+}
+.left-column{
+    display: grid;
+    grid-column: 1;
+    row-gap: 20px;
+
+    .image2{
+        height: 250px;
+        grid-row: 2;
+        grid-column: 1;
+        justify-self: end;
+    }
+    .image3{
+        height: 210px;
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: end;
+        align-self: flex-end;
+    }
+
+}
+
+.right-column{
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 46% 5%;
+    .image1{
+        height: 300px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 300px;
+        min-height: 100px;
+    
+        grid-column: 1;
+        
+    }
+    .button{
+        width: 200px;
+        padding: 10px 45px; 
+        background-color: #e0e5eb; 
+        color: #6a707e; 
+        border: 2px solid black; 
+        font-size: 16px; 
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer; 
+    }
+    .text-info{
+        font-style: italic;
+        color: #3a3e47;
+    }
+    .main-info{
+        position: relative;
+        left: -80px;
+        width: 300px;
+        height: 200px;
+        align-self: center;
+        background-color: #ffffff;
+        padding: 25px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .name{
+        font-size: 1.8em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: black;
+        margin: 10px 0px;
+    }
+
+}
+
+.footer{
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 130px;
+    background-color: #333333;
+}
+
+.footer-text{
+    font-size: 0.7em;
+    color: #ececec;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px){
+    .main{
+        justify-content: center;
+        grid-template-columns: 40% 0%;
+        padding-bottom: 60px;
+        padding-top: 80px;
+    }
+
+    .header{
+        justify-content: space-between;
+    }
+
+    .nav-button {
+        display: block;
+    }
+    
+
+    .header-menu{
+        display: none;
+    }
+
+
+    .left-column{
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        row-gap: 20px;
+
+        width: 70vw;
+        position: relative;
+        left:-30%;
+    
+        .image2{ /* petya official*/
+            height: 50vw;
+            max-width: 250px;
+            max-height: 200px;
+            grid-row: 2;
+            grid-column: 1;
+            justify-self:flex-start;
+        }
+        .image3{
+            height: 77vw;
+            max-width: 300px;
+            max-height: 300px;
+            grid-row: 1;
+            grid-column: 1;
+            justify-self: self-end;
+            align-self:flex-end;
+        }
+    
+    }
+
+    .right-column{
+        display: grid;
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+        left:-30%;
+
+        .image1{
+            height: 65vw;
+            max-width: 300px;
+            max-height: 300px;
+            grid-row: 1;
+            grid-column: 1;
+        }
+    
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width:  65vw;
+            min-height: 100px;
+        
+            grid-column: 1;
+        }
+        .button{
+            width: 60vw;
+            max-width: 200px;
+            padding: 10px 45px; 
+            background-color: #e0e5eb; 
+            color: #6a707e; 
+            border: 2px solid black; 
+            font-size: 16px; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            cursor: pointer; 
+        }
+        .text-info{
+            font-style: italic;
+            color: #3a3e47;
+        }
+        .main-info{
+            position: relative;
+            left: -70%;
+            width: 50vw;
+            height: auto;
+            min-height: 200px;
+            align-self: center;
+            background-color: #ffffff;
+            padding: 25px;
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .name{
+            font-size: 1.8em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+            margin: 10px 0px;
+        }
+    }
+    .footer{
+        min-height: 170px;
+    }
+}

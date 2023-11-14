@@ -1,0 +1,155 @@
+.design-table {
+    width: 100%;
+}
+
+.design-table table,
+th,
+td {
+    text-align: left;
+}
+
+.spacer {
+    min-width: 51px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+}
+
+.column-content h1 {
+    font-size: 40px;
+}
+
+hr {
+    height: 1px;
+    border: 1px dotted #00C4FF;
+    background-color: #00a5ebd1;
+}
+
+.column-content {
+    border: 2px solid #00a5ebd1;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    vertical-align: top;
+
+    height: 70vh;
+    min-width: 371px;
+}
+
+.upper-rectangle {
+    padding: 0px 0px;
+
+    height: 317.333px;
+
+    border: 2px solid #00a5ebd1;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+.x1-header {
+    margin: 20px;
+    font-size: 3em;
+}
+
+.x1-header h1 {
+
+    font-weight: bold;
+}
+
+.menu-list {
+    font-size: 30px;
+}
+
+a,
+a:visited {
+    color: black;
+}
+
+a:active,
+a:hover {
+    color: #00a5ebd1;
+}
+
+.cas-form {
+    margin: 20px 0px 0px 20px;
+    margin-bottom: 0px;
+}
+
+.cas {
+    border-color: #00C4FF;
+    color: black;
+    margin: 20px 20px 0px 20px;
+}
+
+.menu-list li {
+    margin-bottom: 15px;
+}
+
+.bottom-square {
+    border: 2px solid #00a5ebd1;
+    border-top: 4px solid #00a5ebd1;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.bottom-square img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #00a5ebd1;
+}
+
+.content {
+    border: 2px solid #00a5ebd1;
+    border-top: 4px solid #00a5ebd1;
+    vertical-align: top;
+    font-size: 25px;
+    padding: 0px;
+}
+
+.bottom-rectangle {
+    border: 2px solid #00a5ebd1;
+    border-top: 4px solid #00a5ebd1;
+    min-height: 367.333px;
+
+    align-items: center;
+    justify-content: end;
+
+    text-align: right;
+}
+
+.group-table,
+.links-table {
+    margin: 20px;
+    border: 2px double #00a5ebd1;
+}
+
+.group-table th,
+.links-table th {
+    text-align: center;
+}
+
+.submit {
+    background-color: #00a5eb7d;
+    border: 1px solid;
+    margin-left: 20px;
+}
+
+.x2-footer {
+    margin: 20px;
+    font-size: 35px;
+}
+
+.label5thtask {
+    margin-bottom: 0;
+}

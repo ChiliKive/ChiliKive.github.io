@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width:device-width, initial-scale:1.0"/>
+        <link rel="stylesheet" href="t_style.css"/>
+        <title>IP-23 Table site</title>
+    </head>
+    <body>
+        <table class="design-table" style="border-collapse: collapse">
+            <tbody>
+                <tr>
+                    <th class="column-content" rowspan="2">
+                        <h1> Навігація по сайту </h1>  
+                        <hr>    
+                        <ul class="menu-list">
+                            <li>
+                                <a href="index.html">Головна</a>
+                            </li>
+                            <li>
+                                <a href="t_grouplist.html">Список групи</a>
+                            </li>
+                            <li>
+                                <a href="t_semesters.html">Семестри</a>
+                            </li>
+                            <li>
+                                <a href="t_classeslinks.html">Лінки на пари</a>
+                            </li>
+                            <li>
+                                <a href="t_cas.html">Скарги та пропозиції</a>
+                            </li>
+                            <li>
+                                <a href="grid_index.html">Grid-версія</a>
+                            </li>
+                            <li>
+                                <a href="flex_index.html">Flex-версія</a>
+                            </li>                            
+                        </ul>
+                        <hr>
+                    </th>
+                    <th class="spacer" rowspan="3"></th>
+                    <th class="upper-rectangle">
+                        <!-- У елемента зафіксована висота, щоб коли в ліву колонку
+                        додавалось більше вмісту, не збільшувався цей елемент. У 
+                        таблиць інакше не можна. Я шукав методи, але нічого кращого
+                        , на жаль, не знайшов.-->
+                        <h1 class="x1-header">Наша ІП-23 | (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="content">
+                        <form class="cas-form">
+                            <label for="cas">
+                                Введіть ваші скарги або пропозиції: <br>
+                                <textarea name="cas" id="cas" class="cas" cols="45" rows="5" placeholder="Введіть ваші скарги або пропозиції..."></textarea>
+                            </label>
+                            <br>
+                            <input type="submit" value="Надіслати" class="submit">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bottom-square">
+                        <p>Secured by:</p>
+                        <img src="budanov.jpg" alt="Кирило Буданов" width="300" height="300">
+                    </td>
+                    <td class="bottom-rectangle">
+                        <p class="x2-footer"><strong>*Смерть кацапам*<br><br>ІП-23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

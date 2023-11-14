@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+}
+a, a:visited{
+    color: black;
+}
+a:hover{
+    color: #00a5ebd1;
+}
+
+a:active{
+    color: #00a5ebd1;
+}
+.menu-list li{
+    margin-bottom: 15px;
+}
+hr{
+    height: 1px;
+    border: 1px dotted #00C4FF;
+    background-color: #00a5ebd1;
+}
+.x2-footer {
+    margin: 20px;
+}
+.main-container{
+    display: flex;
+}
+.column-content {
+    border: 2px solid #00a5ebd1;
+    border-bottom: none;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.bottom-square {
+    border: 2px solid #00a5ebd1;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.bottom-square img{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #00a5ebd1;
+}
+.x1-header {
+    margin: 20px;
+}
+.upper-rectangle {
+    border: 2px solid #00a5ebd1;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+.content {
+    border: 2px solid #00a5ebd1;
+    padding: 15px;
+}
+.bottom-rectangle {
+    border: 2px solid #00a5ebd1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+@media (min-width: 769px) {
+    .main-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .left-column{
+        order: -1;
+        display: flex;
+        flex-direction: column; 
+    
+        min-width: 400px;
+    }
+    .right-column{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    
+        flex-grow: 1;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .column-content h1{
+        font-size: 40px;
+    }
+    
+    hr{
+        height: 1px;
+        border: 1px dotted #00C4FF;
+        background-color: #00a5ebd1;
+    }
+    
+    
+    .column-content {
+        border: 2px solid #00a5ebd1;
+        padding-left: 15px;
+        padding-right: 10px;
+    
+        flex-grow: 1;
+    
+        min-height: 70vh;
+    }
+    .menu-list{
+        font-size: 30px;
+    }
+    a, a:visited{
+        color: black;
+    }
+    
+    .cas-form{
+        margin: 20px 0px 0px 20px;
+        margin-bottom: 0px;
+    }
+    
+    .cas{
+        border-color: #00C4FF;
+        color: black;
+        margin: 20px 20px 0px 20px;
+    }
+    
+    a:hover{
+        color: #00a5ebd1;
+    }
+    
+    a:active{
+        color: #00a5ebd1;
+    }
+    
+    .menu-list li{
+        margin-bottom: 15px;
+    }
+    
+    .bottom-square {
+        border: 2px solid #00a5ebd1;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        text-align: center;
+    
+    
+        min-height: 367px;
+    }
+    .bottom-square img{
+     
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 #00a5ebd1;
+    }
+    
+    .spacer{
+        min-width: 51px;
+    }
+    
+    .x1-header {
+        margin: 20px;
+    }
+    
+    
+    .upper-rectangle {
+        border: 2px solid #00a5ebd1;
+        padding: 100px 0px;
+        font-size: x-large;
+        display: flex;
+        align-items: center;
+    }
+    .content {
+        border: 2px solid #00a5ebd1;
+        font-size: 25px;
+    
+        flex-grow: 1;
+    }
+    .bottom-rectangle {
+        border: 2px solid #00a5ebd1;
+        
+        min-height: 367.333px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .x2-footer {
+        margin: 20px;
+        font-size: 35px;
+    }
+    .group-table{
+        margin: 20px;
+        border: 2px double #00a5ebd1;
+    }
+    .links-table{
+        margin: 20px;
+        border: 2px double #00a5ebd1;
+    }
+    .submit{
+        background-color: #00a5eb7d ;
+        border: 1px solid ;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body, .main-container {
+        width: 100%;
+    }
+    .left-column, .right-column{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .upper-rectangle{
+        padding: 35px 0px;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+
+    .bottom-square {
+       border-top: none;
+    }
+    .budanov{
+        width: 100px;
+        height: auto;
+    }
+    .content {
+        font-size: 1.4em;
+    }
+    .spacer {
+        display: none; 
+    }
+    .menu-list {
+        font-size: 1.1em;
+    }
+    .column-content h1 {
+        font-size: 1.6em;
+        min-height: auto;
+    }
+    .x1-header {
+        font-size: 1em;
+    }
+    .x2-footer {
+        font-size: 1.4em;
+    }
+}
